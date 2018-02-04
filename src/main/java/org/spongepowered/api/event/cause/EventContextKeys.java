@@ -30,6 +30,7 @@ import org.spongepowered.api.entity.living.Living;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.entity.living.player.User;
 import org.spongepowered.api.entity.projectile.source.ProjectileSource;
+import org.spongepowered.api.event.cause.block.BlockChangeAction;
 import org.spongepowered.api.event.cause.entity.damage.DamageType;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 import org.spongepowered.api.event.cause.entity.dismount.DismountType;
@@ -48,6 +49,8 @@ import org.spongepowered.api.world.World;
 public final class EventContextKeys {
 
     // SORTFIELDS:ON
+
+    public static final EventContextKey<BlockChangeAction> BLOCK_CHANGE_ACTION = createFor("BLOCK_CHANGE_ACTION");
 
     public static final EventContextKey<BlockSnapshot> BLOCK_HIT = createFor("BLOCK_HIT");
 
