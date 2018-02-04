@@ -116,13 +116,19 @@ public interface ChangeBlockEvent extends Event, Cancellable {
      * Called when specific {@link BlockType}s have a notion of "decaying"
      * for various reasons such that the changes are always caused by
      * themselves.
+     *
+     * @deprecated This event should not be used since it is scheduled for removal for API 8
      */
+    @Deprecated
     interface Decay extends ChangeBlockEvent {}
 
     /**
      * Called when a {@link BlockType} decides to "grow" either other
      * blocks or itself or both. Usually considered to be plants or crops.
+     *
+     * @deprecated This event should not be used since it has not been implemented and is scheduled for removal for API 8
      */
+    @Deprecated
     interface Grow extends ChangeBlockEvent {}
 
     /**
